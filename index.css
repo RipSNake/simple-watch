@@ -1,11 +1,17 @@
+@font-face {
+	font-family: hangyaku;
+	src: url(hangyaku-font/Hangyaku-lgMP5.ttf);
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
+/*
 body {
-	background: url() rgba(150,100,130,0.8);
+	background: url('cloud-flowers.jpg') rgba(150,100,130,0.8);
 }
 
 main {
@@ -17,15 +23,56 @@ main {
 }
 
 #watch {
-	background-color: rgba(0,0,0,0.7);
-	border-radius: 10%;
+	background-color: rgba(134,191,244,0.3);
+	border: 0.1em solid rgb(10,200,190);
+	border-radius: 10px;
 	display: flex;
 	justify-content: center;
-	width: 50%;
-	height: 50%;
+	width: 50vw;
+	height: 20vw;
 }
 
 .time {
 	align-self: center;
-	font-size: 12em;
+	font-size: 18vw;
+}
+
+
+*/
+body {
+	height: 100vh;
+}
+
+main {
+	background: url('bridge-rain-anime.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	/*padding-left: 18vw;*/
+	padding-bottom: 14vh;
+	height: 100%;
+}
+
+#watch {
+	font-family: hangyaku;
+	background-image: linear-gradient(rgba(0,0,0,0) 80%, rgba(170,178,185,0.15));
+	display: flex;
+	justify-content: center;
+	width: 32vw;
+	height: 20vh;
+}
+
+.time {
+	align-self: flex-end;
+	margin: -6vh;
+	font-size: 25vh;
+	text-shadow: 0px -3px 3px rgba(170,178,180,0.4);
+	color: rgba(18,16,16,1);
+}
+
+#colon {
+	padding: 0px 10px;
 }
